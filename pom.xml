@@ -11,4 +11,5 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <exec.mainClass>com.mycompany.ejerciciojf.EjercicioJF</exec.mainClass>
     </properties>
+    <name>JFrame</name>
 </project>

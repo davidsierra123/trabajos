@@ -139,14 +139,14 @@ public class JFLogin extends javax.swing.JFrame {
         Tablainfo.setBackground(new java.awt.Color(204, 255, 255));
         Tablainfo.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "Documento", "Nombres", "Apellidos", "Usuario", "Contraseñas"
+                "Documento", "Nombres", "Apellidos", "Usuario"
             }
         ));
         jScrollPane1.setViewportView(Tablainfo);
@@ -166,7 +166,9 @@ public class JFLogin extends javax.swing.JFrame {
                         .addComponent(nom2, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(114, 114, 114)
                 .addGroup(Contra2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Contra3, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(Contra2Layout.createSequentialGroup()
+                        .addComponent(Contra3, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(544, Short.MAX_VALUE))
                     .addGroup(Contra2Layout.createSequentialGroup()
                         .addGroup(Contra2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(documen1, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -177,15 +179,15 @@ public class JFLogin extends javax.swing.JFrame {
                                     .addComponent(Usuari))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(buscar)))
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 476, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(12, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 384, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(76, 76, 76))))
             .addGroup(Contra2Layout.createSequentialGroup()
                 .addGap(167, 167, 167)
                 .addGroup(Contra2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Contra2Layout.createSequentialGroup()
                         .addComponent(guar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 271, Short.MAX_VALUE)
                         .addComponent(most)
                         .addGap(218, 218, 218)
                         .addComponent(Iniciar)
@@ -199,12 +201,12 @@ public class JFLogin extends javax.swing.JFrame {
         Contra2Layout.setVerticalGroup(
             Contra2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Contra2Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addGroup(Contra2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TitleFormu)
-                    .addComponent(salir))
                 .addGroup(Contra2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Contra2Layout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addGroup(Contra2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(TitleFormu)
+                            .addComponent(salir))
                         .addGap(31, 31, 31)
                         .addGroup(Contra2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(docu)
@@ -225,7 +227,7 @@ public class JFLogin extends javax.swing.JFrame {
                             .addComponent(Usuario))
                         .addGap(38, 38, 38))
                     .addGroup(Contra2Layout.createSequentialGroup()
-                        .addGap(57, 57, 57)
+                        .addGap(103, 103, 103)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(Contra2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -325,7 +327,7 @@ public class JFLogin extends javax.swing.JFrame {
     public javax.swing.JLabel Contra;
     public javax.swing.JPanel Contra2;
     public javax.swing.JTextField Contra3;
-    private javax.swing.JPasswordField Contrase;
+    public javax.swing.JPasswordField Contrase;
     public javax.swing.JButton Iniciar;
     public javax.swing.JTable Tablainfo;
     public javax.swing.JLabel TitleFormu;

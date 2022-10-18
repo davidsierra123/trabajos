@@ -11,7 +11,7 @@ import View.JFLogin;
  *
  * @author SENA
  */
-public class EjercicioJF {
+public class JFramePersonas {
 
     public static void main(String[] args) {
         

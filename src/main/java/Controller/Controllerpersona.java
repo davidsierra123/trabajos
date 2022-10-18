@@ -39,7 +39,6 @@ public class Controllerpersona implements ActionListener {
         this.Persona.buscar.addActionListener(this);
         this.Persona.salir.addActionListener(this);
         this.Vistalogin.Salir1.addActionListener(this);
-        /*this.Persona.ret.addActionListener(this);*/
         this.Vistalogin.Validar1.addActionListener(this);
 
     }
