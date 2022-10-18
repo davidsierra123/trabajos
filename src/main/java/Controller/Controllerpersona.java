@@ -63,7 +63,7 @@ public class Controllerpersona implements ActionListener {
             tablainfo(this.Persona.Tablainfo, ListaPersona);
             
             this.Limpiar();
-            JOptionPane.showMessageDialog(null, "Dato Registrado Con Exito");
+            JOptionPane.showMessageDialog(null, "Dato Registrado");
         }
 
         if (e.getSource() == this.Persona.buscar) {
